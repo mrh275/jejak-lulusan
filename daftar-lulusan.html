@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal | Jejak Lulusan SMAN 1 Rawamerta</title>
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- CSS Assets -->
+    <link rel="stylesheet" href="./build/app.css">
+    <link rel="stylesheet" href="./build/page.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!-- JS Assets -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+</head>
+<body class="bg-gray-200 overflow-auto">
+    <div class="left-0"></div>
+    <nav class="navbar">
+        <div class="brand-container">
+            <a href="./" class="img-brand-link">
+                <img src="./assets/img/logo.png" alt="Logo" class="img-brand">
+            </a>
+            <a href="./" class="brand-link">
+                SMAN 1 RAWAMERTA
+            </a>
+        </div>
+        <div class="toggle-menu">
+            <button class="cursor-pointer hbButton" id="toggleMenu">
+                <div class="hb-menu bg-gray-400"></div>
+                <div class="hb-menu bg-gray-400"></div>
+                <div class="hb-menu bg-gray-400"></div>
+              </button>
+        </div>
+        <div class="menu-container collapse -left-full" id="menu">
+            <ul class="nav-menu">
+                <li class="nav-list">
+                    <a href="./" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./daftar-lulusan.html" class="nav-link">Daftar Lulusan</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./pengumuman-kelulusan.html" class="nav-link">Pengumuman</a>
+                </li>
+                <li class="nav-list">
+                    <a href="./login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="title">
+                    Daftar Lulusan
+                </h3>
+            </div>
+            <div class="card-body">
+                <table id="daftar-lulusan" class="daftar-lulusan">
+                    <thead>
+                        <tr>
+                            <td>No</td>
+                            <td>Nama</td>
+                            <td>NISN</td>
+                            <td>Jenis Kelamin</td>
+                            <td>Tempat, Tanggal Lahir</td>
+                            <td>Kelas</td>
+                            <td>Lulusan</td>
+                            <td>Status Lulusan</td>
+                            <td>Status Lanjutan</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Muhamad Ramdani Hidayatullah</td>
+                            <td>9961929832</td>
+                            <td>Laki-laki</td>
+                            <td>Karawang, 30 Januari 1997</td>
+                            <td>12 IPA 1</td>
+                            <td>2015</td>
+                            <td>Kuliah</td>
+                            <td>STMIK Rosma</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Adhinda Putri Larasati</td>
+                            <td>9961929832</td>
+                            <td>Perempuan</td>
+                            <td>Jakarta, 19 Juli 2001</td>
+                            <td>12 IPA 3</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>Alfamart</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Tri Indah Ayu Widari</td>
+                            <td>9961929863</td>
+                            <td>Perempuan</td>
+                            <td>Brebes, 21 Maret 2001</td>
+                            <td>12 IPA 2</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>JVC Electronics</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Erna Herlina</td>
+                            <td>0020938387</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 18 September 2001</td>
+                            <td>12 TKJ 1</td>
+                            <td>2020</td>
+                            <td>Kuliah</td>
+                            <td>UIN Sunan Gunung Djati</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Kemala Putri</td>
+                            <td>0042884271</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 20 Agustus 2004</td>
+                            <td>12 RPL 1</td>
+                            <td>2021</td>
+                            <td>Kuliah</td>
+                            <td>Universitas Pasundan</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Muhamad Ramdani Hidayatullah</td>
+                            <td>9961929832</td>
+                            <td>Laki-laki</td>
+                            <td>Karawang, 30 Januari 1997</td>
+                            <td>12 IPA 1</td>
+                            <td>2015</td>
+                            <td>Kuliah</td>
+                            <td>STMIK Rosma</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Adhinda Putri Larasati</td>
+                            <td>9961929832</td>
+                            <td>Perempuan</td>
+                            <td>Jakarta, 19 Juli 2001</td>
+                            <td>12 IPA 3</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>Alfamart</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Tri Indah Ayu Widari</td>
+                            <td>9961929863</td>
+                            <td>Perempuan</td>
+                            <td>Brebes, 21 Maret 2001</td>
+                            <td>12 IPA 2</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>JVC Electronics</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Erna Herlina</td>
+                            <td>0020938387</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 18 September 2001</td>
+                            <td>12 TKJ 1</td>
+                            <td>2020</td>
+                            <td>Kuliah</td>
+                            <td>UIN Sunan Gunung Djati</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Kemala Putri</td>
+                            <td>0042884271</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 20 Agustus 2004</td>
+                            <td>12 RPL 1</td>
+                            <td>2021</td>
+                            <td>Kuliah</td>
+                            <td>Universitas Pasundan</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Muhamad Ramdani Hidayatullah</td>
+                            <td>9961929832</td>
+                            <td>Laki-laki</td>
+                            <td>Karawang, 30 Januari 1997</td>
+                            <td>12 IPA 1</td>
+                            <td>2015</td>
+                            <td>Kuliah</td>
+                            <td>STMIK Rosma</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Adhinda Putri Larasati</td>
+                            <td>9961929832</td>
+                            <td>Perempuan</td>
+                            <td>Jakarta, 19 Juli 2001</td>
+                            <td>12 IPA 3</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>Alfamart</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Tri Indah Ayu Widari</td>
+                            <td>9961929863</td>
+                            <td>Perempuan</td>
+                            <td>Brebes, 21 Maret 2001</td>
+                            <td>12 IPA 2</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>JVC Electronics</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Erna Herlina</td>
+                            <td>0020938387</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 18 September 2001</td>
+                            <td>12 TKJ 1</td>
+                            <td>2020</td>
+                            <td>Kuliah</td>
+                            <td>UIN Sunan Gunung Djati</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Kemala Putri</td>
+                            <td>0042884271</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 20 Agustus 2004</td>
+                            <td>12 RPL 1</td>
+                            <td>2021</td>
+                            <td>Kuliah</td>
+                            <td>Universitas Pasundan</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Muhamad Ramdani Hidayatullah</td>
+                            <td>9961929832</td>
+                            <td>Laki-laki</td>
+                            <td>Karawang, 30 Januari 1997</td>
+                            <td>12 IPA 1</td>
+                            <td>2015</td>
+                            <td>Kuliah</td>
+                            <td>STMIK Rosma</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Adhinda Putri Larasati</td>
+                            <td>9961929832</td>
+                            <td>Perempuan</td>
+                            <td>Jakarta, 19 Juli 2001</td>
+                            <td>12 IPA 3</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>Alfamart</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Tri Indah Ayu Widari</td>
+                            <td>9961929863</td>
+                            <td>Perempuan</td>
+                            <td>Brebes, 21 Maret 2001</td>
+                            <td>12 IPA 2</td>
+                            <td>2019</td>
+                            <td>Kerja</td>
+                            <td>JVC Electronics</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Erna Herlina</td>
+                            <td>0020938387</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 18 September 2001</td>
+                            <td>12 TKJ 1</td>
+                            <td>2020</td>
+                            <td>Kuliah</td>
+                            <td>UIN Sunan Gunung Djati</td>
+                        </tr>
+                        <tr>
+                            <td class="number"></td>
+                            <td>Kemala Putri</td>
+                            <td>0042884271</td>
+                            <td>Perempuan</td>
+                            <td>Karawang, 20 Agustus 2004</td>
+                            <td>12 RPL 1</td>
+                            <td>2021</td>
+                            <td>Kuliah</td>
+                            <td>Universitas Pasundan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <div class="footer-start">
+                <div class="footer-brand flex justify-start">
+                    <img src="./assets/img/logo.png" alt="Logo SMAN 1 Rawamerta" class="logo-footer">
+                    <h2 class="brand-footer">SMAN 1 Rawamerta</h2>
+                  </div>
+                  <div class="footer-address mt-4">
+                    <span class="font-semibold address-title">
+                      Alamat : <br>
+                    </span>
+                    <span class="address">
+                      Jl. Garunggung - Panyingkiran<br>
+                      Kec. Rawamerta Kab. Karawang<br>
+                      Prov.  Jawa Barat
+                    </span>
+                    <div class="contact-info block mt-3">
+                      <span class="address"><i class="fa fa-globe"></i> <a href="https://sman1rawamerta.sch.id" class="backlink">https://sman1rawamerta.sch.id</a></span><br>
+                      <span class="address"><i class="fa fa-envelope"></i> sman1rwt@gmail.com</span><br>
+                      <span class="address"><i class="fa fa-phone"></i> 081122334455</span>
+                    </div>
+                  </div>
+            </div>
+            <hr class="separator-footer">
+            <div class="footer-middle">
+                <div class="partner">
+                    <h2 class="partner-title">Link Terkait</h2>
+                    <ul class="list-disc ml-5">
+                      <li class="partner-list"><a href="https://dapo.kemdikbud.go.id" class="backlink">Dapodik</a></li>
+                      <li class="partner-list"><a href="https://info.gtk.kemdikbud.go.id" class="backlink">Info GTK Dapodik</a></li>
+                      <li class="partner-list"><a href="https://ptk.datadik.kemdikbud.go.id" class="backlink">PTK Datadik</a></li>
+                      <li class="partner-list"><a href="https://ppdb.disdik.jabarprov.go.id" class="backlink">PPDB Jawa Barat</a></li>
+                      <li class="partner-list"><a href="https://gtk.belajar.kemdikbud.go.id" class="backlink">Portal GTK</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <hr class="separator-footer">
+            <div class="footer-end">
+                <h2 class="langganan">Berlangganan</h2>
+                
+                <!-- Langganan Form -->
+                <form action="" class="langganan-form">
+                  <input type="email" class="langganan-input" placeholder="namaanda@email.com">
+                  <div class="button-form-wrapper">
+                    <button class="btn btn-danger">Langganan</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="copyright">
+                Copyright 2021 &copy; SMAN 1 Rawamerta. All Right Reserved.
+            </span>
+
+            <span class="creator">
+                Made with <i class="fa fa-heart" aria-hidden="true"></i> by Muhamad Ramdani Hidayatullah
+            </span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
