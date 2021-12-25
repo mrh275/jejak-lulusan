@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .btn {
+        @apply inline-block px-3 py-2 rounded-md focus:outline-none focus:ring focus:ring-offset-2 transition tracking-wider font-semibold text-sm sm:text-base;
+    }
+
+    .btn-primary {
+        @apply bg-primary hover:bg-primary-light focus:ring-primary focus:ring-opacity-50 active:bg-primary-dark text-white;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-600 hover:bg-gray-500 focus:ring-gray-600 focus:ring-opacity-50 active:bg-gray-700 text-white
+    }
+
+    .btn-success {
+        @apply bg-green-600 hover:bg-green-500 focus:ring-green-600 focus:ring-opacity-50 active:bg-green-700 text-white
+    }
+
+    .btn-warning {
+        @apply bg-yellow-400 hover:bg-yellow-300 focus:ring-yellow-400 focus:ring-opacity-50 active:bg-yellow-500 text-gray-700
+    }
+
+    .btn-danger {
+        @apply bg-red-600 hover:bg-red-500 focus:ring-red-600 focus:ring-opacity-50 active:bg-red-700 text-white
+    }
+
+    /* Navbar Section */
+    .navbar {
+        @apply w-full h-20 bg-gray-700 px-5 flex justify-between;
+    }
+
+    .toggle-menu {
+        @apply flex items-center lg:hidden;
+    }
+
+    /* Brand Section */
+    .brand-container {
+        @apply w-auto h-full flex;
+    }
+
+    .img-brand-link {
+        @apply inline-block my-auto ml-5;
+    }
+
+    .img-brand {
+        @apply w-12 h-12;
+    }
+
+    .brand-link {
+        @apply inline-block my-auto ml-5 sm:ml-3 mx-auto text-white font-bold text-xl sm:text-2xl;
+    }
+
+    /* Menu Section */
+    .menu-container {
+        @apply bg-gray-700 px-8 w-8/12 h-full py-5 lg:bg-transparent lg:px-0 lg:h-auto lg:py-0 lg:w-2/4 fixed z-10 lg:static lg:flex lg:justify-end;
+    }
+
+    .nav-menu {
+        @apply list-none inline-block my-auto;
+    }
+
+    .nav-list {
+        @apply block lg:inline-block;
+    }
+
+    .nav-link {
+        @apply text-white font-semibold text-lg mx-2 my-1 lg:my-0 inline-block hover:text-primary-light;
+    }
+
+    /* Main Container */
+    .main-container {
+        @apply w-10/12 mx-auto py-16 sm:py-28 sm:flex;
+    }
+
+    .welcome {
+        @apply font-bold text-gray-800 text-4xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+    }
+
+    .portal-jejak {
+        @apply text-primary;
+    }
+
+    .left-content, .right-content {
+        @apply sm:w-2/4;
+    }
+
+    .hero-img {
+        @apply block my-auto align-middle items-baseline;
+    }
+
+    /* Footer */
+    .footer {
+        @apply w-full bg-gray-600;
+    }
+
+    .footer-nav {
+        @apply sm:flex justify-between mx-14 py-8;
+    }
+
+    .brand-footer {
+        @apply text-white font-semibold text-2xl block my-auto transition duration-300;
+    }
+
+    .address {
+        @apply text-white transition duration-300;
+    }
+
+    .partner-title, .langganan, .address-title {
+        @apply text-white text-lg font-semibold transition duration-300;
+    }
+
+    .partner-list {
+        @apply text-white hover:translate-x-2 transform transition duration-300 my-2;
+    }
+
+    .langganan-form {
+        @apply mt-4;
+    }
+
+    .langganan-input {
+        @apply py-1 pl-2 rounded-lg outline-none focus:ring focus:ring-offset-2 focus:ring-primary transition duration-200;
+    }
+
+    .button-form-wrapper {
+        @apply mt-4;
+    }
+
+    .footer-bottom {
+        @apply bg-gray-700 w-full px-8 py-4 text-center lg:flex lg:justify-between;
+    }
+
+    .copyright {
+        @apply block lg:inline-block my-auto text-white;
+    }
+
+    .creator {
+        @apply text-white block lg:inline-block my-auto;
+    }
+
+    .fa-heart {
+        @apply text-red-600
+    }
+
+    .separator-footer {
+        @apply border-t-2 border-gray-500 my-3;
+    }
+}
+
+.logo-footer {
+    width: 44px;
+    margin-right: 1rem;
+}
+
+nav.sticky {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, 1);
+    box-shadow: 0 5px 5px rgba(31, 35, 46, 0.3);
+}
+
+.hb-menu {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+.menu-container {
+    transition: .3s;
+}
+
+/* Toggle Menu Button Animation */
+.change-1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+    transform: rotate(-45deg) translate(-7px, 4px);
+}
+
+.change-2 {
+    opacity: 0;
+}
+
+.change-3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+}
