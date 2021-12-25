@@ -3,23 +3,31 @@
 
 @layer components {
 
-    /* Datatables Daftar Lulusan */
     .card {
-        @apply w-full bg-gray-100 pb-8 rounded-xl;
+        @apply w-full bg-gray-100 rounded-xl shadow-md;
     }
 
     .card .card-header {
         @apply bg-gray-700 rounded-t-xl pt-5 pb-5 mb-3 px-5;
     }
 
+    .main-container .title {
+        @apply text-3xl font-semibold;
+    }
+
+    .left-content .title {
+        @apply text-gray-800;
+    }
+
     .card-header .title {
-        @apply text-3xl font-semibold text-white;
+        @apply text-white;
     }
 
     .card-body {
         @apply px-7;
     }
 
+    /* Datatables Daftar Lulusan */
     #daftar-lulusan_filter input {
         @apply py-1 pl-2 rounded-md outline-none focus:ring focus:ring-offset-0 focus:ring-primary transition duration-200;
     }
@@ -44,6 +52,102 @@
         @apply text-left;
     }
 
+    #daftar-lulusan_info, #daftar-lulusan_paginate {
+        @apply pb-8;
+    }
+
+    /* Pengumuman Kelulusan */
+    .main-container .card.pengumuman {
+        @apply sm:flex;
+    }
+
+    .card.pengumuman .title {
+        @apply px-5
+    }
+
+    /* Form Input Pengumuman */
+    .form-pengumuman {
+        @apply px-5 pt-5;
+    }
+
+    .input-form-wrapper {
+        @apply block;
+    }
+
+    .label-input {
+        @apply block text-lg text-gray-800;
+    }
+
+    .form-input {
+        @apply block w-full rounded-md border-gray-400 mt-2 py-1 px-3 outline-none focus:ring focus:ring-offset-0 focus:ring-primary transition duration-200;
+    }
+
+    .button-wrapper {
+        @apply flex w-full justify-end
+    }
+
+    .button-wrapper button {
+        @apply mt-2;
+    }
+
+    /* Hasil Pengumuman */
+    .right-content, .left-content {
+        @apply flex items-center;
+    }
+
+    .right-content, .left-content {
+        @apply py-5 md:py-8;
+    }
+
+    .hasil {
+        @apply w-full bg-green-500 mx-5 py-5 px-5 rounded-xl;
+    }
+
+    .selamat {
+        @apply text-gray-200 text-3xl font-semibold mb-3;
+    }
+
+    .ucapan {
+        @apply text-gray-200 text-xl text-justify;
+    }
+
+    .nama, .sekolah, .lulus {
+        @apply font-semibold
+    }
+
+    /* Login */
+    .login .card-header {
+        @apply bg-primary;            
+    }
+
+    .login .title {
+        @apply text-3xl text-white text-center;
+    }
+
+    .login .card-body {
+        @apply mx-2 lg:mx-8 pt-3 pb-8;
+    }
+
+    .login-label {
+        @apply text-xl text-center;
+    }
+
+    .form-login {
+        @apply mt-8 mb-5;
+    }
+
+    .username-input-wrapper, .password-input-wrapper {
+        @apply relative my-8;
+    }
+
+    .form-control {
+        @apply w-full h-10 bg-gray-100 focus:ring-0 border-gray-400 outline-none border-b-2 focus:border-primary transition-all duration-200 text-lg text-gray-800 placeholder-transparent;
+    }
+
+    .user-label, .password-label {
+        @apply text-gray-600 text-base absolute left-0 -top-3.5 transition-all cursor-text;
+    }
+
 }
 
 table.daftar-lulusan {
@@ -57,4 +161,8 @@ table.daftar-lulusan {
 
 div.dataTables_length, div.dataTables_filter {
     margin-bottom: 15px;
+}
+
+.form-input {
+    border: 1px solid rgb(156 163 175);
 }

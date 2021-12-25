@@ -75,7 +75,7 @@
 
     /* Main Container */
     .main-container {
-        @apply w-10/12 mx-auto py-16 sm:pb-28 sm:flex;
+        @apply w-10/12 mx-auto py-16 sm:py-16 sm:flex;
     }
 
     .welcome {

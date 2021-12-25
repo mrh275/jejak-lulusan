@@ -480,6 +480,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.btn-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 153 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-primary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 187 255 / var(--tw-bg-opacity));
+}
+
+.btn-primary:focus{
+  --tw-ring-color: rgb(0 153 255 / var(--tw-ring-opacity));
+  --tw-ring-opacity: 0.5;
+}
+
+.btn-primary:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 119 255 / var(--tw-bg-opacity));
+}
+
 .btn-danger{
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -679,7 +701,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .main-container{
-    padding-bottom: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -1019,4 +1042,112 @@ table {
 .number::before {
   counter-increment: section;
   content:counter(section);
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-2{
+  top: 0.5rem;
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:top-2{
+  top: 0.5rem;
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:top-2{
+  top: 0.5rem;
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-3\.5{
+  top: 0.875rem;
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:top-3\.5{
+  top: 0.875rem;
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:top-3\.5{
+  top: 0.875rem;
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-3{
+  top: 0.75rem;
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:top-3{
+  top: 0.75rem;
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:top-3{
+  top: 0.75rem;
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-1\.5{
+  top: 0.375rem;
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:top-1\.5{
+  top: 0.375rem;
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:top-1\.5{
+  top: 0.375rem;
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-1{
+  top: 0.25rem;
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:top-1{
+  top: 0.25rem;
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:top-1{
+  top: 0.25rem;
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.peer:-ms-input-placeholder ~ .peer-placeholder-shown\:text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.peer:placeholder-shown ~ .peer-placeholder-shown\:text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.peer:focus ~ .peer-focus\:-top-3\.5{
+  top: -0.875rem;
+}
+
+.peer:focus ~ .peer-focus\:-top-3{
+  top: -0.75rem;
+}
+
+.peer:focus ~ .peer-focus\:text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.peer:focus ~ .peer-focus\:text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
