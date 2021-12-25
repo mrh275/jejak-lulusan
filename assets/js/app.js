@@ -11,3 +11,11 @@ document.getElementById("toggleMenu").addEventListener("click", function() {
   toggleIcon[2].classList.toggle("change-3");
 
 })
+
+// Datatables
+$(document).ready(function() {
+  $('#daftar-lulusan').DataTable({
+    "autoWidth": false,
+
+  });
+} );
