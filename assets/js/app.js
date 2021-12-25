@@ -16,6 +16,6 @@ document.getElementById("toggleMenu").addEventListener("click", function() {
 $(document).ready(function() {
   $('#daftar-lulusan').DataTable({
     "autoWidth": false,
-
+    "scrollX": true,
   });
 } );
