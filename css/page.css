@@ -1,0 +1,60 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* Datatables Daftar Lulusan */
+    .card {
+        @apply w-full bg-gray-100 pb-8 rounded-xl;
+    }
+
+    .card .card-header {
+        @apply bg-gray-700 rounded-t-xl pt-5 pb-5 mb-3 px-5;
+    }
+
+    .card-header .title {
+        @apply text-3xl font-semibold text-white;
+    }
+
+    .card-body {
+        @apply px-7;
+    }
+
+    #daftar-lulusan_filter input {
+        @apply py-1 pl-2 rounded-md outline-none focus:ring focus:ring-offset-0 focus:ring-primary transition duration-200;
+    }
+
+    .daftar-lulusan {
+        @apply mt-2;
+    }
+
+    .daftar-lulusan td {
+        @apply text-center border-collapse;
+    }
+
+    .daftar-lulusan thead td {
+        @apply font-semibold;
+    }
+
+    .daftar-lulusan tbody td {
+        @apply table-cell align-middle;
+    }
+
+    .daftar-lulusan tbody td:nth-child(2) {
+        @apply text-left;
+    }
+
+}
+
+table.daftar-lulusan {
+    width: 100% !important;
+    border: 1px solid #7c7c7c;
+}
+
+.daftar-lulusan td {
+    border: 1px solid #7c7c7c;
+}
+
+div.dataTables_length, div.dataTables_filter {
+    margin-bottom: 15px;
+}
