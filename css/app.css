@@ -75,7 +75,7 @@
 
     /* Main Container */
     .main-container {
-        @apply w-10/12 mx-auto py-16 sm:py-28 sm:flex;
+        @apply w-10/12 mx-auto py-16 sm:pb-28 sm:flex;
     }
 
     .welcome {
@@ -186,4 +186,15 @@ nav.sticky {
 .change-3 {
     -webkit-transform: rotate(45deg) translate(-9px, -8px);
     transform: rotate(45deg) translate(-9px, -8px);
+}
+
+/* Datatable */
+/* Table Number Increment */
+table {
+    counter-reset: section;
+}
+
+.number::before {
+    counter-increment: section;
+    content:counter(section);
 }

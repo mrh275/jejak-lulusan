@@ -679,7 +679,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .main-container{
-    padding-top: 7rem;
     padding-bottom: 7rem;
   }
 }
@@ -939,6 +938,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1003,4 +1006,17 @@ nav.sticky {
 
 .change-3 {
   transform: rotate(45deg) translate(-9px, -8px);
+}
+
+/* Datatable */
+
+/* Table Number Increment */
+
+table {
+  counter-reset: section;
+}
+
+.number::before {
+  counter-increment: section;
+  content:counter(section);
 }
