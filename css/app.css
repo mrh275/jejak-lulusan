@@ -70,7 +70,7 @@
     }
 
     .nav-link {
-        @apply text-white font-semibold text-lg mx-2 my-1 lg:my-0 inline-block hover:text-primary-light;
+        @apply text-white font-semibold text-lg mx-2 my-1 lg:my-0 inline-block hover:text-primary-light transition duration-200 ease-in-out;
     }
 
     /* Main Container */
