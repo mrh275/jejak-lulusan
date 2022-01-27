@@ -1,10 +1,7 @@
 module.exports = {
   mode: 'jit',
-  purge: {
     // enabled: false,
-    content: ["./*.html"]
-  },
-  content: [],
+  content: ["./*.html"],
   theme: {
     extend: {
       fontFamily: {
