@@ -149,7 +149,7 @@
     }
 
     .user-label, .password-label {
-        @apply text-gray-600 text-base absolute left-0 -top-3.5 transition-all cursor-text bg-gray-200;
+        @apply text-gray-600 text-base absolute left-0 -top-3.5 transition-all cursor-text;
     }
 
 }
